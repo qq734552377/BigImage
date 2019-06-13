@@ -2,6 +2,7 @@ package com.example.bigimage;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -33,6 +34,13 @@ public class BigImageActivity extends Activity {
         setContentView(imageView);
         Glide.with(this).load(mDatas.get(mPosition)).into(imageView);
         setContentView(imageView);
+
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();;
+            }
+        });
 
     }
 }
