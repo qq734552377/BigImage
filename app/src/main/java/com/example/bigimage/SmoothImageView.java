@@ -15,9 +15,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.ImageView;
 
-public class SmoothImageView extends ImageView {
+public class SmoothImageView extends android.support.v7.widget.AppCompatImageView {
 
     private static final int STATE_NORMAL = 0;
     private static final int STATE_TRANSFORM_IN = 1;
