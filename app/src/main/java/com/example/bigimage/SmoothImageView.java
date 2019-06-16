@@ -19,8 +19,8 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 public class SmoothImageView extends android.support.v7.widget.AppCompatImageView {
 
     private static final int STATE_NORMAL = 0;
-    private static final int STATE_TRANSFORM_IN = 1;
-    private static final int STATE_TRANSFORM_OUT = 2;
+    public static final int STATE_TRANSFORM_IN = 1;
+    public static final int STATE_TRANSFORM_OUT = 2;
     private int mOriginalWidth;
     private int mOriginalHeight;
     private int mOriginalLocationX;
