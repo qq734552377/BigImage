@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("width", imageView.getWidth());//必须
                 intent.putExtra("height", imageView.getHeight());//必须
                 startActivity(intent);
-                overridePendingTransition(0, 0);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
         });
 

@@ -42,6 +42,7 @@ public class BigImageActivity extends Activity {
                 if (mode == SmoothImageView.STATE_TRANSFORM_OUT){
                     imageView.setVisibility(View.GONE);
                     finish();
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 }
             }
         });
